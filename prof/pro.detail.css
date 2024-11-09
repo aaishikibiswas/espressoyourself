@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  .quantity-selector, .size-selector, {
+    margin-bottom: 10px;
+  }
+  button{
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(154, 67, 67);
+  }

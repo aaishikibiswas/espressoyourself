@@ -1,0 +1,19 @@
+.containerjourney {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+  }
+  
+  .video {
+    flex: 1; /* The video will take up one part */
+    margin-right: 20px; /* Space between the video and the text */
+  }
+  
+  .textjourney {
+    flex: 1; /* The text will take up one part as well */
+  }
+  
+  video {
+    max-width: 100%;
+    height: auto;
+  }

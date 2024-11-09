@@ -1,0 +1,30 @@
+.about{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 215, 213);
+}
+
+.containerjourney {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+  }
+  
+  .video {
+    flex: 1; 
+    margin-right: 20px; 
+  }
+  
+  .textjourney {
+    flex: 1; /* The text will take up one part as well */
+  }
+  
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+  .me{
+    border: solid rgb(83, 65, 65);
+    padding:50px;
+  }

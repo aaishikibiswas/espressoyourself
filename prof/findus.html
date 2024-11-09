@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Nearest Outlet</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="findus.js" defer></script>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.shop-list {
+    margin-bottom: 20px;
+}
+
+.shop {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.shop h2 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background: #eaeaea;
+}
+
+</style>
+<body>
+    
+    <div class="container">
+        <h1>Find Nearest Outlet</h1>
+        <input type="text" id="current-location" placeholder="Current Location">
+        <div class="dropdowns">
+            <select id="state">
+                <option value="all-states">All States</option>
+                <option value="all-states">odisha</option>
+                <option value="all-states">west bengal</option>
+                <option value="all-states">punjab</option>
+                
+            </select>
+            <select id="city">
+                <option value="all-cities">All Cities</option>
+                <option value="all-cities">Bhubaneswar</option>
+                <option value="all-cities">Cuttack</option>
+                <option value="all-cities">Kolkata</option>
+                <option value="all-cities">Chandighar</option>
+                
+            </select>
+        </div>
+        <div class="shop-list">
+            <div class="shop">
+                <h2>Espresso Yourself | SECTOR 35, CHANDIGARH</h2>
+                <p>SCO 467-468, Ground Floor, Sector 35C Chandigarh, Chandigarh, 160022</p>
+                <p>080957 99886</p>
+                <button>Directions</button>
+                <button>Store Info</button>
+            </div>
+            <div class="shop">
+                <h2>Espresso Yourself | SECTOR 7, CHANDIGARH</h2>
+                <p>Ground Floor, SCO - 4, Madhya Marg, Sector 7-C, Sector 7, Chandigarh, Chandigarh, 160019</p>
+                <p>081477 38396</p>
+                <button>Directions</button>
+                <button>Store Info</button>
+            </div>
+        </div>
+        
+        <div id="map"><main class="main-content"> <section class="map-container"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0868092967867!2d144.96305741550433!3d-37.80868097975145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5777d82f6e3600!2sGoogle!5e0!3m2!1sen!2sau!4v1496846330905" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen> </iframe> </section> </main></div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

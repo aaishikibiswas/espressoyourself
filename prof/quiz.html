@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Mood Quiz</title>
+
+    <link rel="stylesheet" href="quiz.css">
+
+</head>
+
+<body>
+
+    
+
+    <div class="container">
+
+        <h1><i>Find Your Perfect Coffee</i></h1>
+
+       
+
+        <form id="coffeeQuiz">
+
+            <div class="quiz-step" id="step1">
+
+                <label for="mood"><b>What's your current mood?</b></label>
+
+                <input type="radio" name="mood" value="happy" id="happy"> Happy
+
+                <input type="radio" name="mood" value="relaxed" id="relaxed"> Relaxed
+
+                <input type="radio" name="mood" value="energetic" id="energetic"> Energetic
+
+                <input type="radio" name="mood" value="cozy" id="cozy"> Cozy
+
+                <input type="radio" name="mood" value="adventurous" id="adventurous"> Adventurous
+
+                <input type="radio" name="mood" value="classic" id="classic"> Classic
+
+                <input type="radio" name="mood" value="spicy" id="spicy"> Spicy
+
+                <button type="button" onclick="nextStep(2)">Next</button>
+
+            </div>
+
+            <div class="quiz-step" id="step2" style="display:none;">
+
+                <label for="coffeetype"><b>What's your preferred coffee type?</b></label>
+
+                <input type="radio" name="coffeetype" value="espresso" id="espresso"> Espresso
+
+                <input type="radio" name="coffeetype" value="latte" id="latte"> Latte
+
+                <input type="radio" name="coffeetype" value="cappuccino" id="cappuccino"> Cappuccino
+
+                <input type="radio" name="coffeetype" value="coldbrew" id="coldbrew"> Cold Brew
+
+                <input type="radio" name="coffeetype" value="frenchpress" id="frenchpress"> French Press
+
+                <button type="button" onclick="prevStep(1)">Previous</button>
+
+                <button type="button" onclick="nextStep(3)">Next</button>
+
+            </div>
+
+            <div class="quiz-step" id="step3" style="display:none;">
+
+                <label for="brew"><b>What's your preferred brewing method?</b></label>
+
+                <input type="radio" name="brew" value="drip" id="drip"> Drip
+
+                <input type="radio" name="brew" value="pour-over" id="pourover"> Pour Over
+
+                <input type="radio" name="brew" value="espresso-machine" id="espressomachine"> Espresso Machine
+
+                <input type="radio" name="brew" value="aeropress" id="aeropress"> AeroPress
+
+                <input type="radio" name="brew" value="coldbrew" id="coldbrew"> Cold Brew
+
+                <button type="button" onclick="prevStep(2)">Previous</button>
+
+                <button type="button" onclick="showResult()">Find My Coffee</button>
+
+            </div>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+
+        function nextStep(step) {
+
+            document.querySelectorAll('.quiz-step').forEach(div => {
+
+                div.style.display = 'none';
+
+            });
+
+            document.getElementById('step' + step).style.display = 'block';
+
+        }
+
+        
+
+        function prevStep(step) {
+
+            document.querySelectorAll('.quiz-step').forEach(div => {
+
+                div.style.display = 'none';
+
+            });
+
+            document.getElementById('step' + step).style.display = 'block';
+
+        }
+
+
+        function showResult() {
+
+            const mood = document.querySelector('input[name="mood"]:checked')?.value;
+
+            const coffeeType = document.querySelector('input[name="coffeetype"]:checked')?.value;
+
+            const brew = document.querySelector('input[name="brew"]:checked')?.value;
+
+            const result = `You should try a ${mood} ${coffeeType} brewed with a ${brew}.`;
+
+            document.getElementById('result').textContent = result;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

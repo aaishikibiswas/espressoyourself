@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Espresso Yourself</title>
+  <link rel="stylesheet" href="styles.css"> </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Unlock&display=swap" rel="stylesheet">
+  <style>
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    
+
+    .message {
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    
+</style>
+<body>
+    <div class="out">
+        <div class="marquee"> <marquee>Welcome to our Website!  shop our bundles to save some cash !</marquee> </div> 
+  <header class="header"> 
+    <a href="PRO.HTML"><img src="coconut ..png" height="100px"></a>
+    <nav class="nav-links"> 
+      <li><a href="try.html">Shop-all</a></li>
+      
+      <li><a href="#" onclick="showContactForm()">Contact Us</a></li>
+      <li><a href="subs.html">Subscribe</a></li>
+      <li><a href="recipe.html">Recipe-Gen</a></li>
+      <li><a href="about.html">About Us</a></li>
+      
+        
+      </nav>
+      
+    </nav>
+    
+    <div class="find"><ul>
+      <li><a href="quiz.html"><button class="findbtn" style="color: rgb(249, 216, 3);">Find Your Match</button></a></li>
+      
+      <li><button><i class="fa fa-user"></i></button></li>
+      <li><button><i class="fa fa-shopping-cart"></i></button></li>
+
+      <a href="findus.html"><i class="fa-solid fa-location-crosshairs"></i></a>
+    </ul>
+  </div>
+    </div>
+    
+  
+  </header>
+  
+
+  <main>
+    <br>
+    <br>
+    <div id="contact-container" class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+        <button onclick="closeContactForm()" class="close-btn">Close</button>
+    </div>
+    <div class="container">
+    
+      <div class="image-container">
+        <video src="1216594-hd_1920_1080_30fps.mp4" id="image-containervdo" loop autoplay muted></video>
+        <div class="svg-overlay"> <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 467L21.5 469.8C43 472.7 86 478.3 128.8 487.7C171.7 497 214.3 510 257.2 500C300 490 343 457 385.8 433.7C428.7 410.3 471.3 396.7 514.2 401.8C557 407 600 431 642.8 433.3C685.7 435.7 728.3 416.3 771.2 413.8C814 411.3 857 425.7 878.5 432.8L900 440L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#efe9e9" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+    </div>
+    <a href="try.html">
+      <button class="video-button">Explore Coffee</button>
+    </a>
+    
+    <div class="overlay-content">
+        
+        <p class="overlay-text">Life is short ,  Stay Awake...</p>
+    </div>
+    
+      
+        
+      </div>
+    <div class="boxy"> 
+        <div class="blob"></div>
+      <h4>Uncompromising Quality</h4>
+        
+        <h2>Crafted with Care</h2>
+        <h3>Experience the Difference</h3>
+        
+    </div>
+       
+    
+    <main1>
+      <div class="divbest">
+        <div class="best"><h2>BESTSELLERS</h2>
+        <p>We love what you love!
+          Try out the coffees our customers liked best. </p>
+         
+          <div class="bestimg"><img src="bestseller.png"></div>
+        
+      </div>
+      
+
+        
+        <div class="product-display">
+            <div class="product">
+                <img src="cherry.jpeg" alt="SUFIDN COFFEEE">
+                <h4>Cherry-flavored</h4>
+                <p>infused with real cherries<br>Tart and sweet</p>
+            </div>
+            <div class="product">
+                <img src="mocha.jpg" alt="COLFN COFFEE">
+                <h4>Mocha-licious</h4>
+                <p>A mocha lovers dream</p>
+            </div>
+            <div class="product">
+                <img src="cinnamon.jpg" alt="ROTGDEIFE">
+                <h4>Cinnamon Goodness</h4>
+                <p>A touch of spice <br>Elevate your coffe experience with cinnamon touch</p>
+            </div>
+            <a href="shopall.html"> <button class="view-more-button">View More ></button></a>
+           
+        </div>
+      </div>
+        
+    </main1>
+      <hr>
+      <div class="containerjourney">
+        <div class="video">
+        <video id="jv1" src="4821690-uhd_4096_2160_25fps.mp4" loop autoplay muted width="420px" height="440px"></video> 
+        </div>
+        
+        <div class="textjourney">
+        <h16>A Journey from Bean to Cup</h16>
+        <p>
+          Discover the rich aroma and smooth taste of our ethically sourced coffee beans. We are passionate about bringing you the finest coffee from around the world, carefully selected for its unique flavor profile.
+        </p>
+        
+        </div>
+        
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div class="containerjourney">
+            <div class="textjourney">
+                <h15>Indulge and Delight with Every Sip</h15>
+                <p>
+                    Experience the exquisite taste of our freshly roasted coffee beans, expertly crafted to tantalize your senses.
+                     Each cup is a journey of flavor, from the rich aroma that fills the air to the smooth, velvety texture that coats your palate.
+                    Indulge in the pure pleasure of coffee, expertly sourced and roasted to perfection.
+                </p>
+                
+                </div>
+                <br>
+            <div class="video">
+            <video id="jv2" src="4057151-uhd_4096_2160_25fps.mp4" loop autoplay muted width="420" height="440" >
+              
+              </video> 
+            </div>
+            
+            
+            </div>
+<hr>
+
+<div class="pr1">
+  <a href="quiz.html" class="image-container1">
+      <img src="quiz2.jpg" height="10px" alt="Product 1" class="product-image1"></a>
+      
+  
+  <p class="prdetail">Discover your match with our coffee quiz.</p>
+  <a href="quiz.html"><button class="button">take a quiz</button></a> 
+</div>
+
+<h2>Why Choose Espresso Yourself?</h2>
+        <p>We're different from other coffee brands. We want your coffee-drinking experience to be superior to any other.</p>
+        <div class="features">
+            <div class="feature">
+                <img src="icons8-organic-50.png" alt="Organic Options" class="icon">
+                <span>organic options</span>
+            </div>
+            <div class="feature">
+                <img src="icons8-coffee-beans-50.png" alt="Freshly Roasted" class="icon">
+                <span>freshly roasted</span>
+            </div>
+            <div class="feature">
+                <img src="icons8-coffee-bag-50.png" alt="Created with Love" class="icon">
+                <span>created with love</span>
+            </div>
+        </div>
+    <h5>Flavor Profile</h5>
+
+    
+
+    <div class="container1">
+      <div class="item1">
+          <img src="french.jpg" height="70px" >
+          <div class="text1">
+              <h3><a href="https://fluentincoffee.com/french-vanilla-coffee/">French-Vanilla</a></h3>
+          </div>
+          <div class="arrow">></div>
+      </div>
+      
+      <div class="item1">
+          <img src="cinnamon.jpg" height="70px" width="70" alt="dt">
+          <div class="text1">
+              <h3><a href="https://espressorivo.com/benefits-of-cinnamon-in-coffee/#:~:text=15%20Surprising%20Benefits%20of%20CINNAMON%20in%20Coffee%201,8%208.%20Heart%20Health%20Support%20...%20More%20items">Cinnamon</a> </h3>
+          </div>
+          <div class="arrow">></div>
+      </div>
+      <div class="item1">
+          <img src="mocha.jpg" height="70px" alt="d">
+          <div class="text1">
+              <h3><a href="https://www.impulsecoffees.com/blogs/coffee/mocha-coffee-benefits-origins-and-types">Mocha-licious</a> </h3>
+          </div>
+          <div class="arrow">></div>
+      </div>
+      <div class="item1">
+        <img src="cherry.jpeg" height="70px" alt="d">
+        <div class="text1">
+            <h3><a href="activitycal.html">Cherry</a> </h3>
+        </div>
+        <div class="arrow">></div>
+    </div>
+    <div class="item1">
+      <img src="butterscotch.jpg" height="70px" alt="d">
+      <div class="text1">
+          <h3><a href="activitycal.html">Butterscotch</a> </h3>
+      </div>
+      <div class="arrow">></div>
+      
+  </div>
+  
+<div class="item1">
+  <img src="pepper.jpg" height="70px" alt="d">
+  <div class="text1">
+      <h3><a href="activitycal.html">Pepper-mint</a> </h3>
+  </div>
+  <div class="arrow">></div>
+</div>
+
+  </div>
+
+  <body class="about">
+    <div class="containerjourney">
+        <div class="video">
+        <img src="vin1.png" >
+          
+          </img> 
+        </div>
+        <div class="textjourney">
+        <h1>Introducing Espresso Yourself: A Symphony of Flavored Coffee</h1>
+        <p>
+            <i><b>Espresso Yourself</b> <u>is more than just coffee; it's an experience.</u> We're a passionate team dedicated to crafting flavored coffees that tantalize your taste buds and elevate your daily routine. With years of expertise in the coffee industry, we've perfected the art of blending rich, aromatic coffee with a variety of exquisite flavors, creating a symphony of taste that will leave you craving more
+            </p></i>
+        <p>
+            <i>Our commitment to quality extends from bean to cup. We source only the finest coffee beans, roasted to perfection to capture their natural essence. Each flavor is carefully curated to complement the coffee's inherent characteristics, ensuring a harmonious and unforgettable experience.</i> 
+        </p>
+        <p><i><q>From the moment you open the bag, you'll be captivated by the enticing aroma that fills the air. Each sip is a journey, taking you to new heights of coffee enjoyment. Espresso Yourself is more than just a beverage; it's a way of life.</q></i></p>
+        </div>
+        
+        </div>
+        <br>
+        <br>
+        <br>
+        
+            
+            
+            </div>
+</body>
+
+
+  <footer class="actual-footer">
+    <div class="footer-left">
+      <img src="Espresso.png" class="logofooter">
+      <p class="p1" style="font-size: larger;">Get 5% off</p>
+      <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 15px;">Never miss any sips, slurps or spills when you join our email list.</p>
+      <div>
+          <input type="email" placeholder="email address">
+          <button>></button>
+      </div>
+      <div class="footer-social">
+          
+              <img src="facebook-brands-solid.svg">
+          
+          
+              <img src="insta.svg">
+          
+              <img src="pinterest-brands-solid.svg">
+          
+      </div>
+  </div>
+  <footer>
+    <div class="footer-right">
+      <ul>
+          <li><a href="subs.html">subscribe</a></li>
+          <li><a href="shopall.html">view exciting flavours</a></li>
+          <li><a href="quiz.html">take quizes</a></li>
+          
+      </ul>
+      <ul>
+          <li><a href="about.html">about</a></li>
+         
+          <li><a href="recipe.html">recipes</a></li>
+      </ul>
+      <ul>
+          <li><a href="#">create an account</a></li>
+          <li><a href="#">sign in</a></li>
+          <li><a href="#">contact</a></li>
+          
+      </ul>
+  </div>
+  </footer>
+  
+  <div class="footer-bottom">
+  <p>Privacy Policy | Terms & Conditions | © 2024 Espresso Yourself
+  </footer>
+  
+  </footer>
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="loginContainer">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <h3>Don't have an account? <button id="switchToSignup">Sign Up</button></h3>
+            <div class="message hidden" id="loginMessage"></div>
+        </div>
+        <div id="signupContainer" class="hidden">
+            <h2>Create Account</h2>
+            <form id="createForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="createEmail">Email:</label>
+                <input type="email" id="createEmail" name="createEmail" required>
+                <label for="createPassword">Password:</label>
+                <input type="password" id="createPassword" name="createPassword" required>
+                <button type="submit">Create Account</button>
+            </form>
+            <h3>Already have an account? <button id="switchToLogin">Login</button></h3>
+            <div class="message hidden" id="signupMessage"></div>
+        </div>
+    </div>
+</div>
+<script>
+  
+  var modal = document.getElementById("loginModal");
+
+  
+  var btn = document.querySelector(".fa.fa-user");
+
+ 
+  var span = document.getElementsByClassName("close")[0];
+
+  
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+
+  const switchToSignup = document.getElementById('switchToSignup');
+  const switchToLogin = document.getElementById('switchToLogin');
+  const signupContainer = document.getElementById('signupContainer');
+  const loginContainer = document.getElementById('loginContainer');
+
+  switchToSignup.onclick = function() {
+      loginContainer.classList.add('hidden');
+      signupContainer.classList.remove('hidden');
+  }
+
+  switchToLogin.onclick = function() {
+      signupContainer.classList.add('hidden');
+      loginContainer.classList.remove('hidden');
+  }
+
+  document.getElementById('loginForm').onsubmit = function(event) {
+      event.preventDefault();
+      document.getElementById('loginMessage').innerText = 'Logging in...';
+      document.getElementById('loginMessage').classList.remove('hidden');
+      
+      setTimeout(() => {
+          document.getElementById('loginMessage').innerText = 'Login successful!';
+      }, 2000);
+  };
+
+  document.getElementById('createForm').onsubmit = function(event) {
+      event.preventDefault();
+      document.getElementById('signupMessage').innerText = 'Creating account...';
+      document.getElementById('signupMessage').classList.remove('hidden');
+    
+      setTimeout(() => {
+          document.getElementById('signupMessage').innerText = 'Account created successfully!';
+      }, 2000);
+  };
+   function showContactForm() { document.getElementById('contact-container').style.display = 'block'; } function closeContactForm() { document.getElementById('contact-container').style.display = 'none'; } document.getElementById("contactForm").addEventListener("submit", function(event) { event.preventDefault(); alert("Your message has been recorded."); this.reset(); closeContactForm(); }); 
+</script> 
+</body>
+</html>
